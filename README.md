@@ -54,10 +54,33 @@ The project follows a systematic data science pipeline to ensure a thorough anal
 ### 3. Statistical Analysis
 - **Objective**: Identify statistically significant relationships between features.
 - **Steps**:
-  - Conducted correlation tests and computed correlation coefficients (Pearson and Spearman) to determine the strength and nature of relationships.
+  - Conducted correlation tests and computed correlation coefficients to determine the strength and nature of relationships.
+  - Applied the ANOVA test to evaluate the differences in admission chances based on university ratings.
+  - Performed a chi-square test to assess the association between research experience and university ratings.
+
+- **Tests Conducted**:
+
+  1. **ANOVA Test for University Rating**
+     - **Description**: One-Way ANOVA was used to evaluate if there are significant differences in the mean admission chances across different university ratings.
+     - **Result**: The F-statistic value was 114.01 with a p-value of 7.75e-69.
+     - **Interpretation**: The extremely small p-value indicates that there is a statistically significant difference in admission chances based on university ratings.
+
+  2. **Correlation Test for Continuous Variables**
+     - **Description**: Pearson Correlation Coefficient was used to evaluate the strength and direction of the linear relationship between continuous variables (GRE score, CGPA) and the chance of admission.
+     - **Results**:
+       - GRE score: Correlation value = 0.81, p-value = 1.09e-117
+       - CGPA: Correlation value = 0.88, p-value = 3.40e-165
+     - **Interpretation**: Both GRE score and CGPA have a strong positive correlation with the chance of admission, with p-values indicating that these relationships are statistically significant.
+
+  3. **Chi-Square Test for Research and University Rating**
+     - **Description**: A Chi-Square Test of Independence was conducted to evaluate whether research experience and university rating are associated.
+     - **Result**: The Chi-Square statistic was 96.90 with a p-value of 4.49e-20.
+     - **Interpretation**: The small p-value indicates that there is a statistically significant association between research experience and university ratings.
+
 - **Findings**:
-  - Strong positive correlation between CGPA and GRE scores with admission rates.
-  - Moderate correlation between university ratings and admission rates.
+  - There is a significant variation in admission chances across different university ratings (ANOVA test).
+  - Both GRE scores and CGPA have strong positive correlations with admission chances (Pearson correlation).
+  - There is a statistically significant association between having research experience and the university rating (Chi-Square test).
 
 ### 4. Data Preprocessing
 - **Objective**: Prepare the data for modeling by cleaning and transforming it.
