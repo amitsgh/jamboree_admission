@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/jamboree.jpg" alt="Jamboree Logo" width="200">
+  <img src="images/jamboree.jpg" alt="Jamboree Logo" width="400">
 </p>
 
 <h1 align="center">Jamboree Admission Analysis</h1>
