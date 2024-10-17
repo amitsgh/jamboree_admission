@@ -1,4 +1,13 @@
-# Jamboree Admission Analysis
+<p align="center">
+  <img src="images/jamboree.jpg" alt="Jamboree Logo" width="200">
+</p>
+
+<h1 align="center">Jamboree Admission Analysis</h1>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python">
+  <img src="https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter Notebook">
+</p>
 
 ## Overview
 This project explores and predicts the probability of admissions based on academic and personal factors such as GRE scores, TOEFL scores, CGPA, and research experience. Using data analysis, visualization, and machine learning techniques, it identifies key features influencing admission chances and builds models to provide accurate predictions.
