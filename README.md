@@ -16,6 +16,9 @@ The goal is to help students understand which factors impact admission decisions
   - [5. Model Development](#5-model-development)
 - [Results](#results)
 - [Acknowledgments](#acknowledgments)
+- [Feature Importance Analysis](#feature-importance-analysis)
+- [Insights and Recommendations](#insights-and-recommendations)
+- [Acknowledgments](#acknowledgments)
 
 ## Data
 The dataset contains information about students' academic performance, personal ratings, and other factors influencing admissions. It includes the following features:
@@ -100,6 +103,37 @@ The table below summarizes the evaluation metrics for each model:
 | Gradient Boosting     | 0.044973 | 0.004331 | 0.788209 | 0.762526            |
 
 - **Interpretation**: The **Random Forest Regressor** achieved high performance with low error rates and a high R² score, making it the most effective model. The results show that both Random Forest and Gradient Boosting provide reliable predictions with strong model performance metrics.
+
+
+## Feature Importance Analysis
+The importance of each feature in predicting admission probabilities was evaluated using different models. Here are the key findings:
+
+1. **Linear Regression**:
+   - Top feature: **CGPA** (0.112), followed by **LOR 5.0** and **Research**.
+   - Indicates that **CGPA** has the most consistent linear relationship with admission chances.
+
+2. **Decision Tree**:
+   - Top feature: **CGPA** (0.801), followed by **GRE Score** (0.089) and **TOEFL Score** (0.029).
+   - The model highlights **CGPA** as a dominant factor but also shows the importance of GRE scores.
+
+3. **Random Forest**:
+   - Top feature: **CGPA** (0.727), followed by **GRE Score** (0.156) and **TOEFL Score** (0.031).
+   - The results align with the Decision Tree, showing that **CGPA** and **GRE** scores are critical predictors.
+
+4. **Gradient Boosting**:
+   - Top feature: **CGPA** (0.665), followed by **GRE Score** (0.247) and **TOEFL Score** (0.031).
+   - This model also emphasizes **CGPA** and **GRE** scores but gives slightly more importance to **GRE** compared to other models.
+
+## Insights and Recommendations
+### Insights
+- **Consistent Importance of CGPA**: Across all models, **CGPA** consistently emerges as the most influential factor for predicting admission probabilities, indicating that academic performance plays a crucial role in admissions decisions.
+- **GRE and TOEFL Scores**: Although less influential than CGPA, both **GRE** and **TOEFL** scores are significant predictors, especially in tree-based models like Random Forest and Gradient Boosting.
+- **Research and SOP/LOR Ratings**: These features have some influence, but their impact is much less compared to CGPA, GRE, and TOEFL scores.
+
+### Recommendations
+- **Focus on Academic Excellence**: Students should prioritize maintaining a high CGPA, as it is the strongest predictor of admission success.
+- **Improve GRE and TOEFL Scores**: While CGPA is most influential, improving GRE and TOEFL scores can significantly enhance admission chances, particularly in competitive programs.
+- **Consider Research Opportunities**: Engaging in research can positively influence the overall profile, as shown by its association with university ratings and admission outcomes.
 
 ## Acknowledgments
 Special thanks to the Jamboree team for providing the dataset and to the open-source community for the tools and libraries used in this project.
