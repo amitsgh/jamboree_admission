@@ -36,11 +36,11 @@ Stored in `data/Jamboree.csv`.
 - **Best Model**: Random Forest Regressor
 - **Top Factors**: CGPA, GRE, TOEFL
 
-| Model                  | MAE    | R²    |
-|------------------------|--------|--------|
-| Linear Regression      | 0.043  | 0.816  |
-| Random Forest          | 0.046  | 0.785  |
-| Gradient Boosting      | 0.045  | 0.788  |
+| Model                  | MAE    | R²    | Cross-Validation R² |
+|------------------------|--------|--------|---------------------|
+| Linear Regression      | 0.043  | 0.816  | 0.790               |
+| Random Forest          | 0.046  | 0.785  | 0.778               |
+| Gradient Boosting      | 0.045  | 0.788  | 0.763               |
 
 ## Key Insights
 - **CGPA** is consistently the strongest predictor.
